@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :heavy_tasks, only: :create
   devise_for :users
   root to: 'welcome#index'
   get 'welcome/index'
